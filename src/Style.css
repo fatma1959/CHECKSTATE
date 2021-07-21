@@ -1,0 +1,27 @@
+.im1{
+    float: right;
+    width: 150px;
+    height: 150px;
+ 
+}
+.di{
+   
+    margin-inline-start: 20px;
+    background-color: orchid;
+}
+.hey{
+    
+    padding-top: 25px;
+    padding-left: 35%;
+    text-align: center;
+display: flex;
+border:1px solid transparent;
+height: 100%;
+
+
+}
+.pro{
+    font-size: 25px;
+    font-weight: 700;
+}
+    

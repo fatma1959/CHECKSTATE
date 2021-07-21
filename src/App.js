@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import Profile from './Components/Profile/Profile'
+import "./Style.css";
+export class App extends Component {
+    state={
+      isShow:false
+    }
+    handleClick = (()=> {
+    this.setState({isShow: !this.state.isShow})
+    })
+  render() {
+    return (
+      <div style={{marginTop:'250px',textAlign:'center'}}>
+        <button className='di' onClick={this.handleClick}> {this.state.isShow ? 'Hide' : 'Show'}</button>
+        {this.state.isShow ? <Profile/> : 'click again'}
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
+
+
